@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #f4f4f4 ;
+  transition: background 0.3s,color 0.3s;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 20px;
+  color: #09bf18 ;
+  transition: transform 0.3s;
+}
+.heading:hover{
+  transform: scale(1.04);
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,(220px,1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.card{
+  background:white;
+  padding:1.5rem;
+  border-radius:20px;
+  text-align:start;
+  box-shadow:0 4px 8px rgba(0,0,0,0.2) ;
+  transition: transform 0.2s,background 0.3s,color 0.3s;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+.toggle-btn{
+  margin:1rem;
+  padding:10px 20px;
+  cursor:pointer;
+  background: #f4f4f4;
+  color:black;
+  border:none;
+  border-radius:20px;
+}
+
+.card h2 {
+  color: #2c5282;  /* Blue color for names */
+}
+
+.card p {
+  color: #38a169;  /* Green color for roles */
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #a39999;
+  color: #e0e0e0;
+}
+
+.dark-mode .heading {
+  color: #3238d8;
+}
+
+.dark-mode .card {
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .toggle-btn {
+  background: white;
+  color: #121212;
+}
+
+.dark-mode .card h2 {
+  color: #63b3ed;  /* Lighter blue for names in dark mode */
+}
+
+.dark-mode .card p {
+  color: #48bb78;  /* Lighter green for roles in dark mode */
+}
